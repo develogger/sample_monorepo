@@ -1,0 +1,35 @@
+.sidebar {
+  &.show {
+    .sidebar__container {
+      @apply visible;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  &.close {
+    .sidebar__container {
+      @apply visible;
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+
+  &__header {
+  }
+
+  &__container {
+    @apply z-[10001] fixed top-0 right-0 h-[100vh] invisible w-[16rem] bg-surface shadow-elevation-100 flex flex-col;
+    transition: all 0.3s;
+  }
+
+  &__footer {
+    @apply basis-[72px];
+  }
+
+  &__main {
+    @apply basis-full;
+  }
+}
+
+.drawer {
+  @apply fixed top-0 right-0 bg-black-40 w-full h-full z-[10000];
+}

@@ -1,0 +1,19 @@
+.radio {
+  @apply flex relative items-center;
+  &__label {
+    @apply px-xs inline-block text-body-400-b2 text-text;
+    &--disabled {
+      @apply text-text-disabled;
+    }
+  }
+  &__input {
+    @apply border-2 relative rounded-circle border-border w-lg h-lg appearance-none;
+    @apply hover:bg-surface-hover;
+    @apply before:pointer-events-none before:absolute before:h-xs before:w-xs before:scale-0 before:rounded-circle before:bg-transparent before:opacity-0 before:content-[''];
+    @apply after:absolute after:z-[1] after:block after:h-xs after:w-xs after:rounded-circle after:content-[''];
+    @apply checked:after:left-1/2 checked:after:top-1/2 checked:after:h-xs checked:after:w-xs checked:after:rounded-circle checked:after:border-primary checked:after:bg-surface checked:after:content-[''] checked:after:[transform:translate(-50%,-50%)] checked:border-primary checked:bg-primary checked:after:absolute;
+    @apply checked:hover:bg-primary-hover checked:hover:border-primary-hover;
+    @apply focus-visible:shadow-border-focus-heavy checked:focus-visible:border checked:focus-visible:border-surface  focus:outline-none focus:ring-0;
+    @apply disabled:border-border-disabled disabled:hover:bg-surface checked:disabled:border-primary-disabled checked:disabled:bg-primary-disabled checked:disabled:hover:bg-primary-disabled;
+  }
+}

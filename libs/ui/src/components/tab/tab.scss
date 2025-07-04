@@ -1,0 +1,17 @@
+.tab {
+  @apply flex items-center;
+  &__button {
+    @apply mx-sm;
+    @apply text-text-soft h-[56px]  border-b-transparent border-b-2;
+    &--hover {
+      @apply hover:text-text hover:border-b-surface-heavy;
+    }
+    &--label {
+      @apply before:content-['\A'] before:w-xs before:h-xs before:bg-primary before:rounded-circle;
+      @apply before:inline-block before:mx-2xs;
+    }
+    &--active {
+      @apply text-text border-b border-b-2 border-b-primary;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.root {
+  @apply flex justify-between text-text-soft text-body-400-b2 pt-2xs font-yekanFa;
+  &__arrows {
+    @apply flex gap-xs;
+    &__btn {
+      padding-top: 8px !important;
+    }
+  }
+  &__loading {
+    @apply flex gap-xs;
+  }
+  &__result {
+    @apply font-normal pt-xs block md:hidden;
+    &__loading {
+      @apply mt-2xs md:mt-xs;
+    }
+    &__md-section {
+      @apply items-center hidden md:flex;
+      &__action {
+        @apply flex gap-xs border-border-divider border-l ml-md pl-md items-center;
+      }
+    }
+  }
+  &__result--md {
+    @apply gap-x-sm mr-md px-md border-l border-border-divider items-center hidden md:flex;
+    .page {
+      @apply pt-2xs;
+    }
+  }
+}

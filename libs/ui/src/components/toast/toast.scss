@@ -1,0 +1,4 @@
+.toast-box {
+  @apply bg-surface-dark w-fit dark:bg-decretive-dark flex justify-between items-center rounded-sm px-xs py-sm;
+  @apply whitespace-nowrap;
+}

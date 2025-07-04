@@ -1,0 +1,49 @@
+.modal {
+  @apply fixed top-0 left-0 bg-black-40 w-full h-full z-[10000] flex items-end lg:items-center justify-center;
+  direction: rtl;
+  &__header {
+    @apply text-heading-600-h1 text-text p-md flex basis-4xl justify-between flex-row-reverse;
+    &--icon {
+      @apply w-2xl h-2xl;
+    }
+    &--text {
+      @apply self-start;
+    }
+  }
+  &__container {
+    @apply text-text bg-surface shadow-elevation-100;
+    @apply bg-surface rounded-t-md lg:rounded-md shadow-elevation-100 flex flex-col;
+    @apply max-h-[88vh] absolute bottom-0 z-[51] rounded-t-md;
+    @apply w-full lg:rounded-md lg:static;
+  }
+  &__footer {
+    @apply p-md items-center justify-between lg:rounded-b-md;
+    &--left {
+      @apply flex items-center gap-xs mr-auto;
+    }
+  }
+
+  &__footer-container {
+    @apply flex items-center gap-xs;
+
+    &.left {
+      @apply mr-auto;
+    }
+    &__body {
+      @apply basis-full;
+    }
+  }
+  &__body {
+    @apply overflow-auto h-fit;
+    &__slot {
+      @apply p-md;
+    }
+  }
+  &__body--select {
+    @apply h-fit;
+    overflow: inherit;
+    &__slot {
+      @apply p-md;
+    }
+  }
+}

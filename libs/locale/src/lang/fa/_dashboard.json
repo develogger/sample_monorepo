@@ -1,0 +1,8 @@
+{
+  "daily_records": {
+    "amount_successful_sessions": "مبلغ تراکنش‌های موفق",
+    "number_successful_sessions": "تعداد تراکنش‌های موفق",
+    "amount_successful_reconciliations": "مبلغ تسویه‌حساب‌ها",
+    "number_successful_reconciliations": "تعداد تسویه‌حساب‌ها"
+  }
+}

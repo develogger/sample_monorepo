@@ -1,0 +1,788 @@
+@font-face {
+  font-family: 'ZPicon';
+  src:
+    url('./ZPicon.ttf?joofed') format('truetype'),
+    url('./ZPicon.woff?joofed') format('woff'),
+    url('./ZPicon.svg?joofed#ZPicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ZPicon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 24px;
+
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: 'liga';
+  -moz-font-feature-settings: 'liga=1';
+  -moz-font-feature-settings: 'liga';
+  -ms-font-feature-settings: 'liga' 1;
+  font-feature-settings: 'liga';
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ArrowCircleDownLeft:before {
+  content: '\e9f5';
+}
+.icon-DeleteCircle:before {
+  content: '\e9f6';
+}
+.icon-DeleteFillLarge:before {
+  content: '\e9f7';
+}
+.icon-DollarCircle:before {
+  content: '\e9f8';
+}
+.icon-SyncArrowsCircle:before {
+  content: '\e9f9';
+}
+.icon-TableViewGrid:before {
+  content: '\e9f4';
+}
+.icon-AppearanceCustomization:before {
+  content: '\e9e2';
+}
+.icon-AspectRatioPortrait:before {
+  content: '\e9e3';
+}
+.icon-AspectRatioSquare:before {
+  content: '\e9e4';
+}
+.icon-Bug:before {
+  content: '\e9e5';
+}
+.icon-BulletListNumbers:before {
+  content: '\e9e6';
+}
+.icon-BulletListText:before {
+  content: '\e9e7';
+}
+.icon-DollarPlus:before {
+  content: '\e9e8';
+}
+.icon-EmailSendDrop:before {
+  content: '\e9e9';
+}
+.icon-ImageSquare:before {
+  content: '\e9ea';
+}
+.icon-Link:before {
+  content: '\e9eb';
+}
+.icon-LinkToReceipt:before {
+  content: '\e9ec';
+}
+.icon-QrCodeSmall:before {
+  content: '\e9ed';
+}
+.icon-Quote:before {
+  content: '\e9ee';
+}
+.icon-ResetToDefault:before {
+  content: '\e9ef';
+}
+.icon-ShareAsImage:before {
+  content: '\e9f0';
+}
+.icon-TextStyleBold:before {
+  content: '\e9f1';
+}
+.icon-TextStyleHeading:before {
+  content: '\e9f2';
+}
+.icon-TextStyletalic:before {
+  content: '\e9f3';
+}
+.icon-SocialLinkedin:before {
+  content: '\e9be';
+}
+.icon-ItemLink:before {
+  content: '\e9bf';
+}
+.icon-AddToCalendar:before {
+  content: '\e9c0';
+}
+.icon-DateFill:before {
+  content: '\e9c1';
+}
+.icon-Direction:before {
+  content: '\e9c2';
+}
+.icon-DisabledLink:before {
+  content: '\e9c3';
+}
+.icon-DisabledLink2:before {
+  content: '\e9c4';
+}
+.icon-DonationLink:before {
+  content: '\e9c5';
+}
+.icon-EventLink:before {
+  content: '\e9c6';
+}
+.icon-LocationFill:before {
+  content: '\e9c7';
+}
+.icon-MailFill:before {
+  content: '\e9c8';
+}
+.icon-OnlineEventLink:before {
+  content: '\e9c9';
+}
+.icon-PaymentLinksSetting:before {
+  content: '\e9ca';
+}
+.icon-PhoneFill:before {
+  content: '\e9cb';
+}
+.icon-SocialAparat:before {
+  content: '\e9cc';
+}
+.icon-SocialDiscord:before {
+  content: '\e9cd';
+}
+.icon-SocialEitaa:before {
+  content: '\e9ce';
+}
+.icon-SocialFacebook:before {
+  content: '\e9cf';
+}
+.icon-SocialTwitter:before {
+  content: '\e9d0';
+}
+.icon-SocialYoutube:before {
+  content: '\e9d1';
+}
+.icon-TakePaymentLink:before {
+  content: '\e9d2';
+}
+.icon-AlarmTime:before {
+  content: '\e9d3';
+}
+.icon-CircleDeleteCoss:before {
+  content: '\e9d4';
+}
+.icon-DigitalSignature:before {
+  content: '\e9d5';
+}
+.icon-Laptop:before {
+  content: '\e9d6';
+}
+.icon-LineChartSquare:before {
+  content: '\e9d7';
+}
+.icon-MobilePhone:before {
+  content: '\e9d8';
+}
+.icon-PassKey:before {
+  content: '\e9d9';
+}
+.icon-SearchSmall:before {
+  content: '\e9da';
+}
+.icon-SocialTelegramRegular:before {
+  content: '\e9db';
+}
+.icon-UserProfilePlus:before {
+  content: '\e9dc';
+}
+.icon-UsersClients:before {
+  content: '\e9dd';
+}
+.icon-UserSingle:before {
+  content: '\e9de';
+}
+.icon-Wallet:before {
+  content: '\e9df';
+}
+.icon-WalletFill:before {
+  content: '\e9e0';
+}
+.icon-WIFIOff:before {
+  content: '\e9e1';
+}
+.icon-BankToBank:before {
+  content: '\e9b2';
+}
+.icon-CardAdd:before {
+  content: '\e9b3';
+}
+.icon-Building:before {
+  content: '\e9b4';
+}
+.icon-DisabledSquare:before {
+  content: '\e9b5';
+}
+.icon-Document:before {
+  content: '\e9b6';
+}
+.icon-DocumentBoard:before {
+  content: '\e9b7';
+}
+.icon-DocumentNotification:before {
+  content: '\e9b8';
+}
+.icon-InformationSquare:before {
+  content: '\e9b9';
+}
+.icon-LockSignalSquare:before {
+  content: '\e9ba';
+}
+.icon-PaymentIDInbox:before {
+  content: '\e9bb';
+}
+.icon-ShieldProtectedSquare:before {
+  content: '\e9bc';
+}
+.icon-WiFiOff:before {
+  content: '\e9bd';
+}
+.icon-SpeakVoice:before {
+  content: '\e900';
+}
+.icon-ArrowLeftFill:before {
+  content: '\e901';
+}
+.icon-CalendarScheduleLeft:before {
+  content: '\e902';
+}
+.icon-SupportFill:before {
+  content: '\e903';
+}
+.icon-ArrowTopRight:before {
+  content: '\e904';
+}
+.icon-BackCurved:before {
+  content: '\e905';
+}
+.icon-BusinessChart:before {
+  content: '\e906';
+}
+.icon-PinDots:before {
+  content: '\e907';
+}
+.icon-Switches:before {
+  content: '\e908';
+}
+.icon-DocumentText:before {
+  content: '\e909';
+}
+.icon-WarningOutline:before {
+  content: '\e90a';
+}
+.icon-Warning:before {
+  content: '\e90b';
+}
+.icon-Star:before {
+  content: '\e90c';
+}
+.icon-Terminal:before {
+  content: '\e90d';
+}
+.icon-Product:before {
+  content: '\e90e';
+}
+.icon-Premium:before {
+  content: '\e90f';
+}
+.icon-OfficialBadge:before {
+  content: '\e910';
+}
+.icon-NightModeCircle:before {
+  content: '\e911';
+}
+.icon-InvoiceHandSelect:before {
+  content: '\e912';
+}
+.icon-DarkMode:before {
+  content: '\e913';
+}
+.icon-ChevronUp:before {
+  content: '\e914';
+}
+.icon-ArrowDown:before {
+  content: '\e915';
+}
+.icon-ArrowUp:before {
+  content: '\e916';
+}
+.icon-BankIBAN:before {
+  content: '\e917';
+}
+.icon-BankIn:before {
+  content: '\e918';
+}
+.icon-BankKey:before {
+  content: '\e919';
+}
+.icon-BankMagic:before {
+  content: '\e91a';
+}
+.icon-Card:before {
+  content: '\e91b';
+}
+.icon-CardFill:before {
+  content: '\e91c';
+}
+.icon-ClockArrowDown:before {
+  content: '\e91d';
+}
+.icon-Home:before {
+  content: '\e91e';
+}
+.icon-HomeFill:before {
+  content: '\e91f';
+}
+.icon-LaptopCheck:before {
+  content: '\e920';
+}
+.icon-ListHistory:before {
+  content: '\e921';
+}
+.icon-NeoZarinOutline:before {
+  content: '\e922';
+}
+.icon-PasswordSMS-1:before {
+  content: '\e923';
+}
+.icon-PasswordSMS:before {
+  content: '\e924';
+}
+.icon-ProfileCard:before {
+  content: '\e925';
+}
+.icon-ProfileCardFill:before {
+  content: '\e926';
+}
+.icon-SettingsFilter:before {
+  content: '\e927';
+}
+.icon-WarningDelete:before {
+  content: '\e928';
+}
+.icon-Acircle:before {
+  content: '\e929';
+}
+.icon-Add:before {
+  content: '\e92a';
+}
+.icon-AlarmClock:before {
+  content: '\e92b';
+}
+.icon-AngleDown:before {
+  content: '\e92c';
+}
+.icon-AngleLeft:before {
+  content: '\e92d';
+}
+.icon-AngleRight:before {
+  content: '\e92e';
+}
+.icon-AngleUp:before {
+  content: '\e92f';
+}
+.icon-ArchiveIn:before {
+  content: '\e930';
+}
+.icon-ArrowLeft:before {
+  content: '\e931';
+}
+.icon-ArrowRight:before {
+  content: '\e932';
+}
+.icon-ArrowsFirst:before {
+  content: '\e933';
+}
+.icon-ArrowsLast:before {
+  content: '\e934';
+}
+.icon-ArrowTopLeft:before {
+  content: '\e935';
+}
+.icon-AssetLibrary:before {
+  content: '\e936';
+}
+.icon-AtSign:before {
+  content: '\e937';
+}
+.icon-AttachLink:before {
+  content: '\e938';
+}
+.icon-AttachmentLink:before {
+  content: '\e939';
+}
+.icon-BankClock:before {
+  content: '\e93a';
+}
+.icon-BankFast:before {
+  content: '\e93b';
+}
+.icon-BankSignalSquare:before {
+  content: '\e93c';
+}
+.icon-Bill:before {
+  content: '\e93d';
+}
+.icon-BillScan:before {
+  content: '\e93e';
+}
+.icon-Bot:before {
+  content: '\e93f';
+}
+.icon-Box:before {
+  content: '\e940';
+}
+.icon-BuildingCityDownTown:before {
+  content: '\e941';
+}
+.icon-BulletList:before {
+  content: '\e942';
+}
+.icon-Calendar:before {
+  content: '\e943';
+}
+.icon-CalendarClock:before {
+  content: '\e944';
+}
+.icon-CalendarSchedule:before {
+  content: '\e945';
+}
+.icon-Cards:before {
+  content: '\e946';
+}
+.icon-ChartSquare-1:before {
+  content: '\e947';
+}
+.icon-ChartSquare:before {
+  content: '\e948';
+}
+.icon-ChatMessage:before {
+  content: '\e949';
+}
+.icon-CheckMarkCircleFill:before {
+  content: '\e94a';
+}
+.icon-CheckMarkCircleOutlined:before {
+  content: '\e94b';
+}
+.icon-CircleDelete:before {
+  content: '\e94c';
+}
+.icon-Clip:before {
+  content: '\e94d';
+}
+.icon-ClockRefresh:before {
+  content: '\e94e';
+}
+.icon-ClockTimeFast:before {
+  content: '\e94f';
+}
+.icon-Close:before {
+  content: '\e950';
+}
+.icon-Cloud:before {
+  content: '\e951';
+}
+.icon-CodeBlock:before {
+  content: '\e952';
+}
+.icon-Copy:before {
+  content: '\e953';
+}
+.icon-Coupon:before {
+  content: '\e954';
+}
+.icon-CreditCardCheckmark:before {
+  content: '\e955';
+}
+.icon-CreditCardUser-1:before {
+  content: '\e956';
+}
+.icon-CreditCardUser:before {
+  content: '\e957';
+}
+.icon-CreditCheckout:before {
+  content: '\e958';
+}
+.icon-MoonStar:before {
+  content: '\e959';
+}
+.icon-Delete:before {
+  content: '\e95a';
+}
+.icon-DeleteFill:before {
+  content: '\e95b';
+}
+.icon-Discount:before {
+  content: '\e95c';
+}
+.icon-DiscountHand:before {
+  content: '\e95d';
+}
+.icon-DollarFill:before {
+  content: '\e95e';
+}
+.icon-DollarStatus:before {
+  content: '\e95f';
+}
+.icon-DotsMenu:before {
+  content: '\e960';
+}
+.icon-DoubleTick:before {
+  content: '\e961';
+}
+.icon-Download:before {
+  content: '\e962';
+}
+.icon-DragHandle:before {
+  content: '\e963';
+}
+.icon-DrpItemCheck:before {
+  content: '\e964';
+}
+.icon-Email:before {
+  content: '\e965';
+}
+.icon-Excel:before {
+  content: '\e966';
+}
+.icon-ExitLogout:before {
+  content: '\e967';
+}
+.icon-EyeHidden:before {
+  content: '\e968';
+}
+.icon-EyeShow:before {
+  content: '\e969';
+}
+.icon-FilledArrowDown:before {
+  content: '\e96a';
+}
+.icon-FilledArrowUp:before {
+  content: '\e96b';
+}
+.icon-Filter:before {
+  content: '\e96c';
+}
+.icon-FinanceBank:before {
+  content: '\e96d';
+}
+.icon-Gateway:before {
+  content: '\e96e';
+}
+.icon-GridLayout:before {
+  content: '\e96f';
+}
+.icon-Group:before {
+  content: '\e970';
+}
+.icon-ImageStar:before {
+  content: '\e971';
+}
+.icon-IndeterminateFill:before {
+  content: '\e972';
+}
+.icon-Info:before {
+  content: '\e973';
+}
+.icon-InfoFill:before {
+  content: '\e974';
+}
+.icon-InstantPayout:before {
+  content: '\e975';
+}
+.icon-InvoicePlus:before {
+  content: '\e976';
+}
+.icon-Letter:before {
+  content: '\e977';
+}
+.icon-LetterOpen:before {
+  content: '\e978';
+}
+.icon-LocationAddress:before {
+  content: '\e979';
+}
+.icon-MenuBlockCheckmark:before {
+  content: '\e97a';
+}
+.icon-MenuBurger:before {
+  content: '\e97b';
+}
+.icon-MenuList:before {
+  content: '\e97c';
+}
+.icon-MessageEditFill:before {
+  content: '\e97d';
+}
+.icon-Minus:before {
+  content: '\e97e';
+}
+.icon-MobileSettings:before {
+  content: '\e97f';
+}
+.icon-NightModeSquare:before {
+  content: '\e980';
+}
+.icon-Notification:before {
+  content: '\e981';
+}
+.icon-NotificationChannel:before {
+  content: '\e982';
+}
+.icon-PaymentCard:before {
+  content: '\e983';
+}
+.icon-Payout:before {
+  content: '\e984';
+}
+.icon-PenAddNote:before {
+  content: '\e985';
+}
+.icon-PenEdit:before {
+  content: '\e986';
+}
+.icon-PenEditSingle:before {
+  content: '\e987';
+}
+.icon-PercentRefresh:before {
+  content: '\e988';
+}
+.icon-Phone:before {
+  content: '\e989';
+}
+.icon-Pin:before {
+  content: '\e98a';
+}
+.icon-PinFill:before {
+  content: '\e98b';
+}
+.icon-Plus:before {
+  content: '\e98c';
+}
+.icon-ProductBox:before {
+  content: '\e98d';
+}
+.icon-Profile:before {
+  content: '\e98e';
+}
+.icon-ProfileFill:before {
+  content: '\e98f';
+}
+.icon-QrCode:before {
+  content: '\e990';
+}
+.icon-QuestionCircle:before {
+  content: '\e991';
+}
+.icon-RatingEdit:before {
+  content: '\e992';
+}
+.icon-Reconciliation:before {
+  content: '\e993';
+}
+.icon-Referral:before {
+  content: '\e994';
+}
+.icon-Refresh:before {
+  content: '\e995';
+}
+.icon-Refund:before {
+  content: '\e996';
+}
+.icon-RefundFill:before {
+  content: '\e997';
+}
+.icon-RefundStatus:before {
+  content: '\e998';
+}
+.icon-Reload:before {
+  content: '\e999';
+}
+.icon-Search:before {
+  content: '\e99a';
+}
+.icon-SettingsRound:before {
+  content: '\e99b';
+}
+.icon-Share:before {
+  content: '\e99c';
+}
+.icon-SideBarDown:before {
+  content: '\e99d';
+}
+.icon-SocialGithub:before {
+  content: '\e99e';
+}
+.icon-SocialInstagran:before {
+  content: '\e99f';
+}
+.icon-SocialTelegram:before {
+  content: '\e9a0';
+}
+.icon-SocialTelegram2:before {
+  content: '\e9a1';
+}
+.icon-SocialWhatsApp:before {
+  content: '\e9a2';
+}
+.icon-ThumbsDown:before {
+  content: '\e9a3';
+}
+.icon-ThumbsUp:before {
+  content: '\e9a4';
+}
+.icon-TickLarge:before {
+  content: '\e9a5';
+}
+.icon-TickSmall:before {
+  content: '\e9a6';
+}
+.icon-Transaction:before {
+  content: '\e9a7';
+}
+.icon-Trash:before {
+  content: '\e9a8';
+}
+.icon-UndoneCheck:before {
+  content: '\e9a9';
+}
+.icon-UserAyan:before {
+  content: '\e9aa';
+}
+.icon-UserCircle:before {
+  content: '\e9ab';
+}
+.icon-UserProfile:before {
+  content: '\e9ac';
+}
+.icon-UserProfileSquare:before {
+  content: '\e9ad';
+}
+.icon-UsersSendMoney:before {
+  content: '\e9ae';
+}
+.icon-Website:before {
+  content: '\e9af';
+}
+.icon-World:before {
+  content: '\e9b0';
+}
+.icon-ZarinLink:before {
+  content: '\e9b1';
+}

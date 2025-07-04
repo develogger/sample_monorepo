@@ -1,0 +1,28 @@
+.time-line {
+  @apply flex gap-md w-full;
+  &__btn--link {
+    @apply text-primary focus-visible:outline-[#66a6ff] focus-visible:outline-offset-2 outline-none;
+  }
+  &__icon {
+    @apply flex flex-col items-center gap-xs;
+  }
+  &__icon--before {
+    @apply bg-surface-pressed grow w-[1px];
+  }
+  &__icon--after {
+    @apply bg-surface-pressed grow w-[1px];
+  }
+  &__main {
+    @apply flex flex-col p-md w-full border border-border-divider rounded-sm gap-xs;
+    &--title {
+      @apply text-text text-body-400-b2 break-words;
+      overflow-wrap: anywhere;
+    }
+    &--subTitle {
+      @apply text-text-soft text-body-400-b3 break-words;
+    }
+    &--caption {
+      @apply text-text-soft text-body-400-b3 break-words;
+    }
+  }
+}

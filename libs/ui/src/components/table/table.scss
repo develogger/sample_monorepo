@@ -1,0 +1,28 @@
+.root {
+  @apply rounded-md border border-border-divider;
+
+  &__head {
+    @apply grid;
+
+    &__item {
+      @apply px-md text-body-500-b2 py-md flex text-text border-none justify-start;
+    }
+  }
+
+  &__row {
+    &--default {
+      @apply text-body-400-b2 border-none grid;
+      @apply hover:bg-surface-hover;
+      @apply active:bg-surface-pressed;
+      @apply focus-visible:bg-surface-focus;
+    }
+
+    &--loading {
+      @apply text-body-400-b2 text-text border-none grid;
+    }
+
+    &__rows {
+      @apply grid border-t border-t-border-divider px-md py-md items-center;
+    }
+  }
+}

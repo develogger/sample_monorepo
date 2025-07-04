@@ -1,0 +1,46 @@
+@import url('../fonts/font.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* body {
+  scrollbar-width: auto;
+  scrollbar-color: red transparent;
+  scrollbar-gutter: stable;
+} */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #d7d7da;
+  border-radius: 8px;
+  padding: 2px solid #fafafa;
+}
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+} */
+
+.dir {
+  direction: 'rtl';
+}
+
+body {
+  @apply bg-background;
+  @apply dark:bg-background-dark;
+  overscroll-behavior-y: none;
+  font-family: 'IRANYekanXVF', IRANYekanX, tahoma !important;
+}
+
+.fixed-button .root__content {
+  @apply w-md;
+}

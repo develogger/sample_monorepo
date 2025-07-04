@@ -1,0 +1,136 @@
+.inline-msg {
+  &--neutral {
+    @extend .inline-container;
+    @extend .inline-msg-main;
+    @extend .inline-msg-title;
+    @extend .inline-msg-des;
+    @extend .inline-btn;
+    @apply bg-surface-soft border-border;
+    @apply dark:bg-surface-dark-soft dark:border-border-dark;
+
+    &__icon {
+      @extend .warning-icon;
+      @apply text-icon-disabled;
+      @apply dark:text-icon-dark-disabled;
+    }
+
+    i {
+      @apply ml-xs;
+    }
+  }
+
+  &--informative {
+    @extend .inline-container;
+    @extend .inline-msg-main;
+    @extend .inline-msg-title;
+    @extend .inline-msg-des;
+    @extend .inline-btn;
+    @apply bg-surface-information border-border-information;
+    @apply dark:bg-surface-information-dark dark:border-border-dark-information;
+
+    &__icon {
+      @extend .warning-icon;
+      @apply text-icon-information;
+      @apply dark:text-icon-dark-information;
+    }
+
+    i {
+      @apply ml-xs;
+    }
+  }
+
+  &--warning {
+    @extend .inline-container;
+    @extend .inline-msg-main;
+    @extend .inline-msg-title;
+    @extend .inline-msg-des;
+    @extend .inline-btn;
+    @apply bg-surface-warning border-border-warning;
+    @apply dark:bg-surface-warning-dark dark:border-border-dark-warning;
+
+    &__icon {
+      @extend .warning-icon;
+      @apply text-icon-warning;
+      @apply dark:text-icon-dark-warning;
+    }
+
+    i {
+      @apply ml-xs;
+    }
+  }
+
+  &--negative {
+    @extend .inline-container;
+    @extend .inline-msg-main;
+    @extend .inline-msg-title;
+    @extend .inline-msg-des;
+    @extend .inline-btn;
+    @apply bg-surface-danger border-border-danger;
+    @apply dark:bg-surface-danger-dark dark:border-border-dark-danger;
+
+    &__icon {
+      @extend .warning-icon;
+      @apply text-icon-danger;
+      @apply dark:text-icon-dark-danger;
+    }
+
+    i {
+      @apply ml-xs;
+    }
+  }
+
+  &--positive {
+    @extend .inline-container;
+    @extend .inline-msg-main;
+    @extend .inline-msg-title;
+    @extend .inline-msg-des;
+    @extend .inline-btn;
+    @apply bg-surface-success border-border-success;
+    @apply dark:bg-surface-success-dark dark:border-border-dark-success;
+
+    &__icon {
+      @extend .warning-icon;
+      @apply text-icon-success;
+      @apply dark:text-icon-dark-success;
+    }
+
+    i {
+      @apply ml-xs;
+    }
+  }
+}
+
+.inline-container {
+  @apply flex rounded-sm border p-md w-full;
+}
+
+.warning-icon {
+  @apply w-xl h-xl;
+}
+
+.inline-btn {
+  @apply mt-xs;
+}
+
+.inline-msg-main {
+  @apply flex-1;
+}
+
+.inline-msg-header {
+  @apply flex;
+
+  i {
+    @apply w-xl h-xl text-icon mr-sm ml-md cursor-pointer;
+    @apply dark:text-icon-dark;
+  }
+}
+
+.inline-msg-title {
+  @apply text-text text-button-500-bt1 flex-1;
+  @apply dark:text-text-dark;
+}
+
+.inline-msg-des {
+  @apply text-text text-body-400-b3;
+  @apply dark:text-text-dark;
+}

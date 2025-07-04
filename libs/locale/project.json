@@ -1,0 +1,41 @@
+{
+  "name": "locale",
+  "$schema": "https://raw.githubusercontent.com/nrwl/nx/master/packages/nx/schemas/project-schema.json",
+  "root": "libs/locale/",
+  "projectType": "library",
+  "targets": {
+    "generate": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "libs/locale",
+        "commands": [
+          "node ./src/fetchLangs.mjs",
+          "npx copyfiles -u 1 ./src/fa-IR.json ../../apps/shell/src/locale",
+          "echo copy locale file to shell",
+          "npx copyfiles -u 1 ./src/fa-IR.json ../../apps/docs/src/locale",
+          "echo copy locale file to docs",
+          "npx copyfiles -u 1 ./src/fa-IR.json ../../apps/zarin-kyc/src/locale",
+          "echo copy locale file to kyc"
+        ],
+        "parallel": false
+      }
+    },
+    "release": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "preset": "conventional",
+        "push": true,
+        "tagPrefix": "{projectName}@"
+      }
+    },
+    "release-dry": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "dryRun": true,
+        "preset": "conventional",
+        "tagPrefix": "{projectName}@"
+      }
+    }
+  },
+  "tags": []
+}

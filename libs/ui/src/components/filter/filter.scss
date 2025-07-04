@@ -1,0 +1,45 @@
+.filter {
+  @apply rounded-[20px] text-body-500-b2 py-2xs pr-sm pl-2xs flex gap-2xs;
+  @apply focus-visible:outline-offset-2 focus-visible:outline-transparent;
+
+  &--default {
+    @apply border border-border-divider;
+    @apply dark:border-border-dark-divider;
+    @apply hover:bg-secondary-hover;
+    @apply active:bg-secondary-pressed;
+  }
+
+  &--with-value {
+    @apply bg-primary;
+    @apply hover:bg-primary-hover;
+    @apply active:bg-primary-pressed;
+  }
+
+  &__inner {
+    &--default {
+      @apply flex text-text;
+      @apply dark:text-text-dark;
+    }
+
+    &--with-value {
+      @apply flex text-text-onPrimary gap-[6px] pl-[6px];
+      @apply dark:text-text-dark;
+    }
+  }
+}
+
+.icon {
+  &--with-value {
+    @apply text-text-onPrimary pl-[2px];
+    @apply dark:text-text-dark;
+  }
+
+  &--default {
+    @apply text-text;
+    @apply dark:text-text;
+  }
+
+  &--shared {
+    @apply flex items-center absolute my-auto top-0 bottom-0 gap-2xs left-2xs cursor-pointer;
+  }
+}

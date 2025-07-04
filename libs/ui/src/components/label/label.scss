@@ -1,0 +1,58 @@
+.lable-container {
+  /* Default */
+
+  &--positive {
+    /* Default */
+    @extend .label-block;
+    @apply bg-surface-success text-text-success;
+    @apply dark:bg-surface-success-dark dark:text-text-dark-success;
+  }
+
+  &--negative {
+    /* Default */
+    @extend .label-block;
+    @apply bg-surface-danger text-text-danger;
+    @apply dark:bg-surface-danger-dark dark:text-text-dark-danger;
+  }
+
+  &--informative {
+    /* Default */
+    @extend .label-block;
+    @apply bg-surface-information text-text-information;
+    @apply dark:bg-surface-information-dark dark:text-text-dark-information;
+  }
+
+  &--neutral {
+    /* Default */
+    @extend .label-block;
+    @apply bg-surface-soft text-text;
+    @apply dark:bg-surface-dark-soft dark:text-text-dark;
+  }
+
+  &--primary {
+    /* Default */
+    @extend .label-block;
+    @apply bg-primary text-white-100;
+    @apply dark:bg-primary-dark dark:text-text-dark-onPrimary;
+  }
+
+  &--outlined {
+    /* Default */
+    @extend .label-block;
+    @apply bg-surface  text-text border border-border;
+    @apply dark:bg-surface-dark dark:text-text-dark dark:border-border-dark;
+  }
+
+  &--small {
+    @extend .label-block;
+    @apply px-xs py-[2px] text-body-400-b3;
+  }
+
+  &--medium {
+    @extend .label-block;
+    @apply px-xs py-2xs text-body-400-b2;
+  }
+}
+.label-block {
+  @apply text-center w-max inline-flex items-center;
+}

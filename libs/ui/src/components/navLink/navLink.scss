@@ -1,0 +1,30 @@
+.root {
+  @apply bg-surface rounded-sm py-xs px-xs w-full text-body-500-b2 text-text;
+  @apply hover:bg-surface-hover;
+  @apply active:bg-surface-pressed;
+  @apply focus-visible:outline-none focus-visible:border-interactive-focus focus-visible:border-2;
+
+  &__item {
+    @apply flex items-start relative;
+
+    &__arrow {
+      @apply items-center flex;
+    }
+
+    &__start {
+      @apply flex items-start gap-md;
+
+      &--label {
+        @apply truncate;
+      }
+    }
+
+    &__end {
+      @apply flex;
+    }
+  }
+}
+
+.active {
+  @apply text-primary;
+}

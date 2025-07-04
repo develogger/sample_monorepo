@@ -1,0 +1,40 @@
+{
+  "name": "ui",
+  "$schema": "https://raw.githubusercontent.com/nrwl/nx/master/packages/nx/schemas/project-schema.json",
+  "root": "libs/ui/",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "libs/ui",
+        "commands": ["eslint . --fix"]
+      }
+    },
+    "tsc": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "libs/ui",
+        "commands": ["tsc -p tsconfig.json --noEmit", "vue-tsc --noEmit"],
+        "color": true
+      }
+    },
+    "release": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "preset": "conventional",
+        "push": true,
+        "tagPrefix": "{projectName}@"
+      }
+    },
+    "release-dry": {
+      "executor": "@jscutlery/semver:version",
+      "options": {
+        "dryRun": true,
+        "preset": "conventional",
+        "tagPrefix": "{projectName}@"
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,12 @@
+.badge {
+  @apply relative w-fit;
+
+  &__content {
+    @apply w-lg py-2xs px-2xs h-lg right-0 top-0 text-surface bg-primary dark:bg-primary-dark absolute text-caption-400-c1 flex justify-center z-10 rounded-circle flex items-center justify-center;
+    @apply border-border;
+  }
+
+  &__withoutContent {
+    @apply w-sm h-sm bg-primary dark:bg-primary-dark absolute -top-2xs -right-2xs rounded-circle;
+  }
+}

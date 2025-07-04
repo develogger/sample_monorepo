@@ -1,0 +1,73 @@
+.input {
+  @apply relative;
+  &__inner {
+    @apply focus-within:border-interactive-focus border focus-within:shadow-border-focus-soft;
+
+    .text-editor {
+      @apply w-full bg-transparent p-sm font-normal text-body-400-b2 text-text relative disabled:text-text-disabled;
+    }
+
+    &__input-section {
+      @apply flex;
+    }
+
+    &--error {
+      @apply border-border-danger rounded-sm border;
+    }
+
+    &--default {
+      @apply bg-surface focus:border focus:border-interactive-focus;
+      @apply hover:shadow-border-hover;
+    }
+  }
+
+  &__description {
+    @apply flex justify-between flex-row-reverse;
+    direction: ltr;
+
+    i {
+      @apply align-middle;
+    }
+
+    &__helper {
+      @apply my-2xs pr-xs font-normal text-body-400-b3 font-yekanFa;
+
+      &--error {
+        @apply text-text-danger;
+      }
+
+      &--success {
+        @apply text-text-success;
+      }
+
+      &--info {
+        @apply text-text-soft;
+      }
+    }
+
+    &__limit {
+      @apply font-yekanFa text-text-soft text-body-400-b3 my-2xs ml-xs;
+    }
+  }
+
+  .text-editor {
+    &::placeholder {
+      @apply font-yekanFa;
+    }
+  }
+
+  .text-editor {
+    @apply w-full bg-transparent p-sm font-yekanRd text-body-400-b2 text-text relative disabled:text-text-disabled;
+    @apply outline-none focus:outline-[#66a6ff66] focus:outline-offset-0 focus:border focus:border-interactive-focus focus:rounded-sm;
+  }
+}
+
+.label-enter-active,
+.label-leave-active {
+  @apply transition-all ease-in-out duration-75;
+}
+
+.label-enter-from,
+.label-leave-to {
+  @apply translate-y-2xl opacity-0;
+}

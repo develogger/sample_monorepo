@@ -1,0 +1,175 @@
+.vjl {
+  @apply bg-surface w-full font-yekanFa rounded-sm;
+
+  &__button--default {
+    @apply text-text;
+    @apply hover:bg-surface-hover outline-none rounded-sm;
+    @apply active:bg-surface-pressed;
+    @apply disabled:text-text-disabled disabled:hover:bg-surface;
+
+    &:focus-visible {
+      box-shadow: inset 0 0 0 2px #66a6ff;
+    }
+  }
+
+  &__button--selected {
+    @apply bg-primary text-text-onPrimary #{!important};
+    @apply outline-none rounded-sm;
+    @apply active:bg-primary-pressed;
+
+    &:focus-visible {
+      box-shadow: inset 0 0 0 2px #66a6ff;
+    }
+  }
+
+  &__holiday {
+    @apply text-text-danger;
+  }
+
+  &__header {
+    &-default {
+      @apply bg-background rounded-sm p-2xs flex rtl:justify-start;
+    }
+
+    &__btn {
+      @apply hover:bg-secondary;
+      @apply active:bg-secondary-pressed;
+      @apply disabled:bg-secondary-disabled disabled:text-text-disabled;
+      @apply items-center rounded-sm text-text text-body-400-b2 flex;
+
+      &:focus-visible {
+        box-shadow: inset 0 0 0 2px #66a6ff;
+        outline: none;
+      }
+    }
+
+    &__button {
+      @apply rtl:pr-xs rtl:pl-2xs py-2xs gap-xs;
+      @extend .vjl__header__btn;
+    }
+
+    &__button--icon {
+      @extend .vjl__header__btn;
+      @apply p-2xs;
+    }
+
+    &__navigation {
+      @apply flex;
+    }
+  }
+
+  &__calendar {
+    @apply flex flex-col gap-xs w-[250px];
+  }
+
+  &__navigation {
+    &-default {
+      @apply flex justify-between;
+    }
+
+    &-button {
+      @apply text-text text-body-400-b2 rtl:pr-sm rtl:pl-xs py-2xs flex gap-xs items-center rounded-sm;
+      @apply hover:bg-surface;
+      @apply active:bg-surface-pressed;
+      @apply disabled:bg-surface-disabled disabled:text-text-disabled;
+    }
+  }
+
+  &__main {
+    @apply flex flex-col gap-xs;
+  }
+
+  &__days {
+    &--default {
+      @apply grid grid-cols-7;
+
+      &__week-day {
+        @apply w-full h-[40px] flex items-center justify-center text-body-400-b3;
+
+        &__active {
+          @apply text-primary;
+        }
+
+        &__text {
+          @apply text-text-soft;
+        }
+
+        &__holiday {
+          @apply text-text-danger;
+        }
+      }
+
+      &__day {
+        @apply w-full h-[40px] flex items-center justify-center text-body-400-b3 relative;
+
+        &__active {
+          @apply text-primary relative;
+          @apply after:w-[13px] after:h-[1px] after:bottom-[4px] after:absolute after:content-[''];
+
+          &::after {
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="13" height="1" viewBox="0 0 13 1" fill="none"%3E%3Crect x="0.285645" width="12" height="1" rx="0.5" fill="%230A33FF" /%3E%3C/svg%3E');
+          }
+        }
+      }
+    }
+  }
+
+  &__range {
+    &--btn {
+      @apply w-full bg-primary rounded-none text-text-onPrimary;
+      @apply hover:bg-primary-hover;
+      @apply focus:bg-primary-pressed;
+      @apply focus-visible:bg-primary-pressed;
+    }
+
+    &__first {
+      @extend .vjl__range--btn;
+      @apply rounded-br-circle rounded-tr-circle;
+    }
+
+    &__end {
+      @extend .vjl__range--btn;
+      @apply rounded-bl-circle rounded-tl-circle;
+    }
+
+    &__include {
+      @apply bg-surface-primary text-primary rounded-none;
+      @apply hover:bg-surface-primary-hover;
+      @apply focus:bg-surface-primary-pressed;
+      @apply focus-visible:bg-surface-primary-pressed;
+    }
+  }
+
+  &__year-index--default {
+    @apply min-h-[14.5rem] grid grid-cols-3 overflow-auto max-h-[14.5rem] gap-xs;
+
+    &__close {
+      @apply w-full h-[2.5rem] flex rtl:justify-end mb-xs;
+
+      &__button {
+        @extend .vjl__navigation-button;
+        @apply rtl:pl-sm;
+      }
+    }
+
+    &__year {
+      @apply w-full h-[2.5rem] flex items-center justify-center text-body-400-b3 relative;
+    }
+  }
+
+  &__month-index--default {
+    @extend .vjl__year-index--default;
+
+    &__close {
+      @extend .vjl__year-index--default__close;
+
+      &__button {
+        @extend .vjl__year-index--default__close__button;
+      }
+    }
+
+    &__month {
+      @extend .vjl__year-index--default__year;
+    }
+  }
+}

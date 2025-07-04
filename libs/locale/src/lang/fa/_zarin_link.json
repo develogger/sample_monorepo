@@ -1,0 +1,176 @@
+{
+  "determine_target_amount": "تعیین مبلغ هدف",
+  "target_amount": "مبلغ هدف",
+  "target_amount_description": "مبلغِ مجموع که پس از جمع\u200Cآوری آن،\nاین کمپین به پایان می\u200Cرسد",
+  "alert": {
+    "title": "جایگزینی صفحه «محصولات»",
+    "description1": "صفحه محصولات به زودی از دسترس خارج خواهد شد. از این پس، برای مشاهده و مدیریت محصولات و لینک‌های قبلی یا ایجاد لینک‌های پرداخت جدید، به صفحه",
+    "description2": "لینک‌های پرداخت",
+    "description3": "مراجعه کنید."
+  },
+  "zarin_link_create_modal": {
+    "description": "برای ایجاد لینک پرداخت جدید، نوع آن را انتخاب کنید.",
+    "payment_link_title": "لینک دریافت وجه",
+    "payment_link_description": "مناسب برای پرداخت‌های عمومی، مانند هزینه‌ی معاملات",
+    "product_link_title": "لینک فروش محصول",
+    "product_link_description": "مناسب برای فروش کالاها و خدمات",
+    "reservation_link_title": "لینک ثبت‌نام رویداد",
+    "reservation_link_description": "مناسب برای دریافت هزینه‌ی ثبت‌نام رویدادها و کلاس‌ها",
+    "subscription_link_title": "لینک حمایت مالی",
+    "subscription_link_description": "مناسبِ جمع‌آوری وجوه برای کمپین‌های حمایتی و خیریه"
+  },
+  "payment_link": {
+    "create_page_title": "ایجاد لینک دریافت وجه",
+    "edit_page_title": "ویرایش لینک دریافت وجه",
+    "page_description": "مناسب برای پرداخت‌های عمومی، مانند هزینه‌ی معاملات",
+    "price_with_buyer": "ورود مبلغ توسط پرداخت‌کننده",
+    "success_edit": "لینک پرداخت وجه با موفقیت ویرایش شد",
+    "success_add": "لینک پرداخت وجه با موفقیت ایجاد شد",
+    "share_label-tab": "لینک پرداخت",
+    "share_label-codeId": "شناسه لینک پرداخت"
+  },
+  "subscription_link": {
+    "title": "عنوان",
+    "create_page_title": "ایجاد لینک حمایت مالی",
+    "edit_page_title": "ویرایش لینک حمایت مالی",
+    "page_description": "مناسب جهت جمع‌آوری وجوه برای کمپین‌های حمایتی و خیریه",
+    "price_with_buyer": "ورود مبلغ توسط پرداخت‌کننده",
+    "success_edit": "لینک حمایت مالی با موفقیت ویرایش شد",
+    "success_add": "لینک حمایت مالی با موفقیت ایجاد شد",
+    "amount_and_target_amount_validation": "مبلغ نمی‌تواند بیشتر از مبلغ هدف باشد."
+  },
+  "reservation_link": {
+    "create_page_title": "ایجاد لینک ثبت‌نام رویداد",
+    "edit_page_title": "ویرایش لینک ثبت‌نام رویداد",
+    "page_description": "مناسب برای دریافت هزینه‌ی ثبت‌نام رویدادها و کلاس‌ها",
+    "success_edit": "لینک ثبت‌نام رویداد با موفقیت ویرایش شد",
+    "success_add": "لینک ثبت‌نام رویداد با موفقیت ایجاد شد",
+    "share_label-tab": "لینک ثبت‌نام رویداد",
+    "share_label-codeId": "شناسه لینک ثبت‌نام رویداد",
+    "form": {
+      "holding": "نحوه برگزاری",
+      "start_date": "تاریخ شروع",
+      "end_date": "تاریخ پایان",
+      "start_time": "ساعت شروع",
+      "end_time": "ساعت پایان",
+      "capacity": "ظرفیت",
+      "province": "استان",
+      "city": "شهر",
+      "city_id": "آیدی شهر",
+      "city_title": "عنوان شهر",
+      "address_location": "آدرس محل برگزاری",
+      "address": "نشانی",
+      "event_type": "نوع رویداد",
+      "address_detail": "جزئیات آدرس",
+      "description": "توضیحات",
+      "url": "لینک رویداد",
+      "online": "آنلاین",
+      "in_person": "حضوری"
+    }
+  },
+  "optional": "اختیاری",
+  "by_payer": "توسط پرداخت\u200Cکننده",
+  "form": {
+    "title_input": "عنوان لینک پرداخت",
+    "description": "توضیحات",
+    "spec_table": {
+      "add_spec_table": "افزودن جدول مشخصات",
+      "title": "عنوان",
+      "value": "مقدار",
+      "add_new_row": "افزودن سطر جدید"
+    },
+    "category": "دسته‌",
+    "sub_category": "زیر دسته",
+    "meta_data": {
+      "event_type": "نوع رویداد",
+      "start_date": "تاریخ شروع",
+      "start_time": "ساعت شروع",
+      "end_date": "تاریخ پایان",
+      "end_time": "ساعت پایان",
+      "url": "لینک"
+    }
+  },
+  "product_link": {
+    "create_page_title": "ایجاد لینک فروش محصول",
+    "page_description": "مناسب برای فروش کالاها و خدمات",
+    "edit_page_title": "ویرایش لینک فروش محصول",
+    "success_edit": "لینک فروش محصول با موفقیت ویرایش شد",
+    "success_add": "لینک فروش محصول با موفقیت ایجاد شد"
+  },
+  "more_detail": {
+    "more_detail_title": "جزئیات بیشتر",
+    "default_setting": "بر اساس تنظیمات پیشفرض",
+    "fee_payer": "پرداخت کننده کارمزد"
+  },
+  "setting": {
+    "tabs": {
+      "branding": "برندینگ",
+      "form": "فرم سفارش",
+      "next_page": "صفحه پس از پرداخت",
+      "notification": "اطلاع‌رسانی",
+      "other_setting": "سایر تنظیمات"
+    },
+    "branding": {
+      "default_colors": "رنگ\u200Cهای پیش\u200Cفرض",
+      "default_colors_description": "رنگ\u200Cهای پیش\u200Cفرض، بر روی رنگ دکمه و پس\u200Cزمینه در صفحه واسط پرداخت اعمال می\u200Cشود.",
+      "primary_color": "رنگ اولیه",
+      "secondary_color": "رنگ ثانویه",
+      "profile": "نمایه",
+      "profile_description": "به منظور ارتباط خریدار با شما، این اطلاعات در صفحه واسط پرداخت به خریداران نمایش داده می\u200Cشود.",
+      "introduction": "معرفی",
+      "introduction_description": "این متن جهت معرفی شماست و توسط پرداخت\u200Cکنندگان قابل مشاهده خواهد بود.",
+      "contacts": "راه\u200Cهای تماس",
+      "mobile": "شماره تلفن",
+      "invalid_mobile": "فرمت شماره تلفن اشتباه است.",
+      "email": "ایمیل",
+      "address": "آدرس",
+      "social_medias": "شبکه\u200Cهای اجتماعی",
+      "account_link": "لینک حساب کاربری",
+      "add_account": "افزودن حساب جدید",
+      "label": "لیبل",
+      "social_media_link": "لینک شبکه اجتماعی",
+      "social_media_types": {
+        "instagram": "اینستاگرام",
+        "twitter": "توییتر (ایکس)",
+        "linkedin": "لینکدین",
+        "facebook": "فیسبوک",
+        "telegram": "تلگرام",
+        "whatsapp": "واتس‌اپ",
+        "eata": "ایتا",
+        "discord": "دیسکورد",
+        "github": "گیت‌هاب",
+        "youtube": "یوتیوب",
+        "aparat": "آپارات"
+      }
+    }
+  },
+  "detail": {
+    "amount_successful_transactions_amount_month": "مجموع مبلغ تراکنش‌های موفق",
+    "amount_successful_transactions_count_month": "مجموع تعداد تراکنش‌های موفق",
+    "amount_successful_transactions_amount_today": "مبلغ تراکنش‌های موفق امروز",
+    "amount_successful_transactions_count_today": "تعداد تراکنش‌های موفق امروز",
+    "current_amount_month": "ماه جاری: {amount} ریال",
+    "current_count_month": "ماه جاری: {count} تراکنش",
+    "showAllTransactions": "مشاهده همه ({count})",
+    "last_transactions": "آخرین تراکنش‌ها",
+    "detail_share_title": "لینک پرداخت",
+    "detail_share_description": "مشاهده و اشتراک\u200Cگذاری این لینک پرداخت",
+    "detail_share_deactivate_title": "لینک پرداخت غیرفعال است",
+    "detail_share_deactivate_description": "این لینک پرداخت، قبلا غیرفعال شده است. برای استفاده دوباره، لطفا آن را فعال کنید.",
+    "more_detail_title": "جزئیات",
+    "more_detail_description": "جزئیات مرتبط با این لینک پرداخت",
+    "payments_statistics": "آمار پرداخت\u200Cها",
+    "amount": "{amount} ریال",
+    "percent": "{percent} درصد",
+    "by_payer": "توسط پرداخت\u200Cکننده",
+    "coupon_description": "کدهای فعال و قابل اعمال بر روی این لینک پرداخت",
+    "start_event": "شروع رویداد",
+    "end_event": "پایان رویداد",
+    "out_of_stock": "اتمام ظرفیت",
+    "out_of_stock_description": "ظرفیت این رویداد به اتمام رسیده است و لینک پرداخت آن تا زمان به\u200Cروزرسانی ظرفیت، از دسترس خارج خواهد شد. برای به\u200Cروزرسانی ظرفیت رویداد، به صفحه ویرایش مراجعه کنید."
+  },
+  "category": "دسته",
+  "sub_category": "زیر دسته",
+  "copy": "کپی کردن",
+  "share": "اشتراک گذاری"
+}

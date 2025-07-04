@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "jsxImportSource": "vue",
+    "noImplicitThis": true,
+    "strict": true,
+    "verbatimModuleSyntax": true,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "resolvePackageJsonExports": false,
+    "types": ["vite/client"],
+    "baseUrl": ".",
+    "paths": {
+      "datepicker/*": ["../../libs/date-picker/src/*"]
+    }
+  },
+  "includes": ["src", "node_modules/vue3-dropzone/dist/index.d.ts"],
+  "exclude": ["node_modules", "src/**/*.tsx"]
+}

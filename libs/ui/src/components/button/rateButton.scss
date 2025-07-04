@@ -1,0 +1,8 @@
+.root {
+  &__button {
+    @apply w-full p-xs border border-border-divider bg-surface text-text justify-center;
+    @apply hover:bg-surface-primary hover:text-primary;
+    @apply active:bg-surface-primary-pressed active:text-primary;
+    @apply focus-visible:bg-surface-primary-focus focus-visible:outline-none focus-visible:text-primary;
+  }
+}

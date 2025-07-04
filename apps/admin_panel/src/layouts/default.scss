@@ -1,0 +1,11 @@
+.root {
+  &__start-section {
+    @apply flex gap-2xs items-center;
+  }
+  &__user-menu {
+    @apply cursor-pointer hover:bg-surface-hover p-[4px] rounded-sm;
+  }
+  .terminal-layout {
+    @apply flex justify-between;
+  }
+}

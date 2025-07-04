@@ -1,0 +1,12 @@
+.zp-balance {
+  @apply flex items-center w-fit py-xs px-xs gap-sm rounded-sm;
+
+  &-title {
+    @apply text-body-500-b3 text-text-soft whitespace-nowrap flex items-center gap-xs;
+    @apply dark:text-text-dark-soft;
+  }
+
+  &__amount {
+    @apply flex justify-start items-center;
+  }
+}

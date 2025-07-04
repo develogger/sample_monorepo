@@ -1,0 +1,11 @@
+.root {
+  @apply p-xs shadow-elevation-50 max-h-[224px] overflow-y-auto text-body-400-b2 inline-block bg-surface;
+  &__item {
+    @apply p-xs mt-xs mb-2xs flex justify-end cursor-pointer rounded-sm;
+    @apply hover:bg-surface-hover;
+    @apply active:bg-surface-pressed;
+    &__icon {
+      @apply pl-xs;
+    }
+  }
+}

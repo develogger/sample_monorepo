@@ -1,0 +1,39 @@
+@import '../../../../../libs/ui/src/assets/css/tailwind.css';
+@import 'shepherd.js/dist/css/shepherd.css';
+
+.container-xl {
+  @apply xl:mx-auto max-w-screen-xl px-md xl:px-2xl;
+}
+
+.container-lg {
+  @apply lg:mx-auto max-w-screen-lg mx-auto;
+}
+
+.container-md {
+  @apply md:mx-auto max-w-screen-md mx-md;
+}
+
+.primary--link {
+  @apply hover:decoration-dotted text-primary hover:underline hover:underline-offset-8 cursor-pointer text-body-400-b3;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+.break-word {
+  word-break: break-word;
+}
+
+body {
+  overflow-y: scroll;
+  font-family: IRANYekanXVF, IRANYekanX, tahoma !important;
+
+  &.overflow-y-hidden {
+    @apply pr-xs;
+  }
+}

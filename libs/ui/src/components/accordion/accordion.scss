@@ -1,0 +1,27 @@
+.root {
+  @apply bg-surface border border-border-divider;
+  &__header {
+    @apply flex justify-between p-md text-body-500-b2 text-text;
+    &--default {
+      @apply cursor-pointer;
+      @apply hover:bg-surface-hover;
+      @apply active:bg-surface-pressed;
+    }
+
+    &--disabled {
+      @apply bg-surface-disabled text-text-disabled;
+    }
+    &--start {
+      @apply flex gap-md;
+    }
+  }
+  &__body {
+    @apply bg-surface-soft text-right text-body-400-b2 text-text border-t border-t-border-divider;
+    &--default {
+      @apply p-md;
+    }
+    &--start {
+      @apply py-md pr-[54px] pl-md;
+    }
+  }
+}

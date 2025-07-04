@@ -1,0 +1,42 @@
+.bank-card {
+  @apply bg-surface rounded-sm;
+  &__is-default {
+    @apply rounded-t-sm border-x border-t border-border-divider;
+  }
+  &__main {
+    @apply border-x border-border-divider px-md flex ltr:flex-row-reverse pt-2xs gap-sm w-full flex-wrap;
+    &__iban {
+      @apply font-Mono text-body-400-b2 w-full;
+    }
+    &__logo {
+      @apply w-[40px] h-[40px] bg-surface-soft flex items-center justify-center mt-2xs rounded-md border border-border-soft;
+    }
+    &__description {
+      @apply text-body-400-b3 text-text-soft mt-2xs text-right float-right;
+    }
+  }
+  &__main--not-default {
+    @apply pt-md border-t border-border-divider rounded-sm pb-md;
+  }
+  &__main--is-default {
+    @apply pb-xl rounded-b-sm border-border-divider;
+  }
+  &__main--no-items {
+    @apply border-b border-border-divider;
+  }
+  &__main--items {
+    @apply border-x border-border-divider rounded-none;
+  }
+  &__rows {
+    @apply border-x border-border-divider border-b space-y-md pb-md rounded-b-sm;
+    &__inner {
+      @apply flex justify-between ltr:flex-row-reverse px-md;
+      &__label {
+        @apply text-body-500-b3 text-text-soft;
+      }
+      &__value {
+        @apply text-body-500-b2 text-text;
+      }
+    }
+  }
+}

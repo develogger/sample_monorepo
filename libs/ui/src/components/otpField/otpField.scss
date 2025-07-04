@@ -1,0 +1,25 @@
+.otp {
+  @apply flex flex-col;
+  &__input {
+    @apply w-[54px] h-3xl border-border border dark:border-border-dark rounded-sm text-center;
+    @apply outline-none focus:outline-[#66A6FF] focus:outline-offset-0 focus:border focus:border-interactive-focus focus:rounded-sm;
+
+    &__inner--error {
+      @apply border-border-danger  rounded-sm border;
+    }
+  }
+  &__description {
+    &__helper {
+      @apply my-2xs pr-sm text-body-400-b3 font-yekanFa;
+      &--error {
+        @apply text-text-danger text-body-400-b3  flex justify-end items-center px-xs py-xs;
+      }
+      &--success {
+        @apply text-text-success text-body-400-b3  flex justify-end items-center px-xs py-xs;
+      }
+      &--info {
+        @apply text-text-soft text-body-400-b3  flex justify-end items-center px-xs py-xs;
+      }
+    }
+  }
+}

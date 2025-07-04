@@ -1,0 +1,99 @@
+.status-root {
+  @apply flex bg-surface-soft rounded-lg w-fit gap-2xs items-center text-body-400-b3;
+
+  &__text {
+    @apply text-body-500-b3;
+  }
+
+  &__type {
+    &--neutral {
+      @apply bg-surface-soft dark:bg-surface-dark;
+    }
+
+    &--informative {
+      @apply bg-surface-information dark:bg-surface-information-dark;
+    }
+
+    &--warning {
+      @apply bg-surface-warning dark:bg-surface-warning-dark;
+    }
+
+    &--negative {
+      @apply bg-surface-danger dark:bg-surface-danger-dark;
+    }
+
+    &--positive {
+      @apply bg-surface-success dark:bg-surface-success-dark;
+    }
+
+    &--primary {
+      @apply bg-primary dark:bg-primary-dark text-text-onPrimary;
+    }
+  }
+
+  &__color {
+    &--neutral {
+      @apply text-text-soft dark:text-text-dark-soft;
+    }
+
+    &--informative {
+      @apply text-text-information dark:text-text-dark-information;
+    }
+
+    &--warning {
+      @apply text-text-warning dark:text-text-dark-warning;
+    }
+
+    &--negative {
+      @apply text-text-danger dark:text-text-dark-danger;
+    }
+
+    &--positive {
+      @apply text-text-success dark:text-text-dark-success;
+    }
+  }
+
+  &__icon {
+    &--neutral {
+      @apply text-icon-disabled dark:text-icon-dark-disabled;
+    }
+
+    &--informative {
+      @apply text-icon-information dark:text-icon-dark-information;
+    }
+
+    &--warning {
+      @apply text-icon-warning dark:text-icon-dark-warning;
+    }
+
+    &--negative {
+      @apply text-icon-danger dark:text-icon-dark-danger;
+    }
+
+    &--positive {
+      @apply text-icon-success dark:text-icon-dark-success;
+    }
+  }
+
+  &__dot {
+    &--neutral {
+      @apply bg-icon-disabled dark:bg-icon-dark-disabled;
+    }
+
+    &--informative {
+      @apply bg-icon-information dark:bg-icon-dark-information;
+    }
+
+    &--warning {
+      @apply bg-icon-warning dark:bg-icon-dark-warning;
+    }
+
+    &--negative {
+      @apply bg-icon-danger dark:bg-icon-dark-danger;
+    }
+
+    &--positive {
+      @apply bg-icon-success dark:bg-icon-dark-success;
+    }
+  }
+}

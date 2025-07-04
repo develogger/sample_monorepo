@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "allowJs": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strictBindCallApply": false,
+    "noImplicitReturns": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "declaration": false,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "noEmit": true,
+    "strict": true,
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["es2020", "dom"]
+  },
+  "exclude": ["node_modules", "dist", ".nuxt"]
+}

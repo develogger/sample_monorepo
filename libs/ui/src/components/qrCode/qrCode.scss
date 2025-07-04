@@ -1,0 +1,11 @@
+.qr-code {
+  @apply px-xs pt-xs pt-xs pb-sm bg-primary w-fit flex flex-col items-center justify-center;
+  @apply border-b border-black-100 border-b-4;
+  @apply rounded-lg;
+  &__img {
+    @apply rounded-sm w-[128px] h-[128px];
+  }
+  &__title {
+    @apply text-surface text-heading-600-h1 mt-sm;
+  }
+}

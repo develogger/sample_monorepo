@@ -1,0 +1,15 @@
+.clip-board {
+  @apply flex flex-col items-start w-full;
+  &__title {
+    @apply text-text-soft mb-sm text-body-400-b3;
+  }
+  &__main {
+    @apply flex justify-between items-center py-xs pl-md pr-xs bg-surface-soft rounded-md h-[56px] w-full;
+    &--actions {
+      @apply flex items-center;
+    }
+    &--link {
+      @apply text-text text-body-400-b2 text-ellipsis overflow-hidden whitespace-nowrap font-Mono mr-md;
+    }
+  }
+}

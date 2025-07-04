@@ -1,0 +1,50 @@
+.root {
+  @apply rounded-sm font-yekanFa inline-flex justify-center items-center;
+
+  justify-content: center !important;
+
+  &__content {
+    @apply flex;
+    &__text {
+      @apply mx-xs justify-center flex items-center truncate;
+    }
+  }
+  &__loading {
+    @apply animate-loading rounded-circle absolute;
+    &--primary {
+      @apply bg-white-60;
+    }
+    &--outlined {
+      @apply bg-black-40 dark:bg-white-60;
+    }
+    &--default {
+      @apply bg-black-40 dark:bg-white-60;
+    }
+  }
+  &__variant {
+    &--contained {
+      &--primary {
+        @apply bg-primary focus-visible:outline-[#66a6ff] focus-visible:outline-offset-2 outline-none dark:bg-primary-dark dark:text-text-dark-onPrimary text-text-onPrimary hover:bg-primary-hover active:dark:bg-primary-dark-pressed hover:dark:bg-primary-dark-hover active:bg-primary-pressed  disabled:bg-primary-disabled disabled:dark:bg-primary-dark-disabled text-body-500-b2;
+      }
+      &--light {
+        @apply bg-surface-primary dark:bg-surface-primary-dark text-primary dark:text-primary-dark hover:bg-surface-primary-hover hover:dark:bg-surface-primary-dark-hover active:bg-surface-primary-pressed active:dark:bg-surface-primary-dark-pressed disabled:bg-surface-primary-disabled disabled:dark:bg-surface-primary-dark-disabled disabled:text-text-disabled disabled:dark:text-text-dark-disabled text-body-500-b2;
+      }
+      &--secondary {
+        @apply bg-secondary dark:bg-secondary-dark text-text dark:text-text-dark hover:bg-secondary-hover hover:dark:bg-secondary-dark-hover active:bg-secondary-pressed active:dark:bg-secondary-dark-pressed disabled:bg-secondary-disabled disabled:dark:bg-secondary-dark-disabled disabled:text-text-disabled disabled:dark:text-text-dark-disabled text-body-500-b2;
+      }
+      &--tertiary {
+        @apply bg-surface focus-visible:outline-[#66a6ff] focus-visible:outline-offset-2 outline-none dark:bg-surface-dark text-text dark:text-text-dark hover:bg-surface-hover hover:dark:bg-surface-dark-hover active:bg-surface-pressed active:dark:bg-surface-dark-active disabled:bg-surface-disabled disabled:dark:bg-surface-dark-disabled disabled:dark:text-text-dark-disabled disabled:text-text-dark-disabled text-body-500-b2;
+      }
+      &--decretive {
+        @apply bg-decretive dark:bg-decretive-dark text-text-onDanger dark:text-text-dark-onDanger hover:bg-decretive-hover hover:dark:bg-decretive-dark-hover active:bg-decretive-pressed active:dark:bg-decretive-dark-pressed disabled:bg-decretive-disabled disabled:dark:bg-decretive-dark-disabled disabled:text-text-disabled disabled:dark:text-text-dark-disabled text-body-500-b2;
+      }
+    }
+    &--outlined {
+      @apply bg-transparent border-border border dark:border-border-dark text-text dark:text-text-dark hover:bg-secondary-hover hover:dark:bg-secondary-dark-hover active:bg-secondary-pressed active:dark:bg-secondary-dark-pressed disabled:text-text-disabled disabled:dark:text-text-dark-disabled disabled:bg-secondary-disabled disabled:dark:bg-secondary-dark-disabled text-body-500-b2;
+    }
+
+    &--default {
+      @apply text-primary dark:text-primary-dark hover:text-primary-hover hover:dark:text-primary-dark-hover active:text-primary-pressed active:dark:text-primary-dark-pressed disabled:text-primary-disabled disabled:dark:text-primary-dark-disabled text-body-500-b3;
+    }
+  }
+}

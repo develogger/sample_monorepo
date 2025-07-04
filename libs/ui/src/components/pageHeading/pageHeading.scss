@@ -1,0 +1,46 @@
+.root {
+  &--fixed {
+    @apply bg-surface dark:bg-surface-dark shadow-elevation-100 dark:shadow-dark-elevation-100 sticky;
+  }
+  &--default {
+    @apply grid grid-cols-3 gap-md;
+    @apply md:grid-cols-[auto_1fr_40px];
+  }
+  &--without-backroll {
+    @apply grid grid-cols-2;
+    @apply sm:grid-cols-2;
+  }
+  &--without-action {
+    @apply flex sm:flex-row flex-col gap-md sm:flex-row-reverse md:items-center;
+  }
+  &--without-all {
+    @apply grid grid-cols-1;
+  }
+  &__action {
+    @apply content-start max-h-[40px] lg:col-start-1;
+  }
+  &__backroll--default {
+    @apply justify-self-end order-1 justify-end w-[40px];
+    @apply col-start-3 md:col-start-3 md:col-span-1;
+  }
+  &__backroll--without-action {
+    @apply flex justify-end;
+    @apply sm:col-start-3 sm:col-span-1;
+  }
+  &__content--default {
+    @apply justify-self-end col-span-3 mt-xs text-right flex-1 md:col-span-1;
+    @apply w-full md:w-auto md:col-start-2 row-start-2 md:row-start-1 sm:mt-0 sm:mx-md content-center sm:place-content-center sm:self-center;
+  }
+  &__content--without-backroll {
+    @apply justify-self-end col-start-2 col-span-1 row-start-1 text-right;
+    @apply sm:col-start-3 sm:col-span-1 sm:row-start-1;
+  }
+  &__content--without-action {
+    @apply justify-self-end;
+    @apply sm:col-span-2 sm:row-start-1;
+  }
+  &__content--without-all {
+    @apply justify-self-end my-md;
+    @apply sm:col-span-2 sm:row-start-1 sm:my-xs;
+  }
+}

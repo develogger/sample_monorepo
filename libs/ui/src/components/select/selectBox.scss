@@ -1,0 +1,67 @@
+.root {
+  @apply pl-0 pr-xs;
+
+  &__list {
+    @apply flex flex-col text-end gap-2xs font-yekanFa max-h-[250px] overflow-auto pl-xs;
+
+    &__item {
+      @apply flex justify-between w-full;
+
+      &--active {
+        @apply bg-surface-primary-select py-xs px-sm text-text text-body-400-b2 rounded-sm justify-between flex;
+      }
+
+      &--initial {
+        @apply py-xs px-sm text-text text-body-400-b2 rounded-sm justify-between flex;
+      }
+
+      &--default {
+        @apply bg-surface cursor-pointer py-xs px-sm text-text text-body-400-b2 rounded-sm justify-between flex;
+        @apply hover:bg-surface-hover;
+        @apply active:bg-surface-pressed;
+      }
+
+      &--disabled {
+        @apply bg-surface-soft cursor-default py-xs px-sm text-text text-body-400-b2 rounded-sm justify-between flex;
+      }
+
+      &__icon {
+        &--disabled {
+          @apply opacity-50;
+        }
+      }
+
+      &__title {
+        &--default {
+          @apply text-body-400-b2 text-text;
+        }
+
+        &--disabled {
+          @apply text-text-soft text-body-400-b2;
+        }
+      }
+
+      &__description {
+        &--default {
+          @apply text-caption-400-c1 text-text-soft;
+        }
+
+        &--disabled {
+          @apply text-text-disabled text-caption-400-c1;
+        }
+      }
+    }
+  }
+
+  &__empty {
+    @apply py-md px-xl text-center flex flex-col items-center;
+
+    &__title {
+      @apply mt-xl text-body-400-b2 text-text-soft;
+    }
+  }
+
+  &__loading {
+    @apply flex flex-col gap-[1.125rem];
+  }
+}

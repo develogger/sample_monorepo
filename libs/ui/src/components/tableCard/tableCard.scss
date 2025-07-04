@@ -1,0 +1,11 @@
+.root {
+  @apply rounded-sm border border-border-divider bg-surface p-md;
+  &__rows {
+    &__header {
+      @apply mb-xl;
+    }
+    &__footer {
+      @apply mt-xl;
+    }
+  }
+}

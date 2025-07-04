@@ -1,0 +1,36 @@
+.shimmer-box {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(237, 238, 239, 0.8) 0%,
+    rgba(237, 238, 239, 0.4) 50%,
+    rgba(237, 238, 239, 0.8) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmerAnimation 1.5s infinite linear;
+}
+
+.dark {
+  .shimmer-box {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(52, 53, 54, 0.8) 0%,
+      rgba(52, 53, 54, 0.4) 50%,
+      rgba(52, 53, 54, 0.8) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmerAnimation 1.5s infinite linear;
+  }
+}
+
+@keyframes shimmerAnimation {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

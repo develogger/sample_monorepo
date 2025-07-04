@@ -1,0 +1,19 @@
+.zp {
+  @apply flex gap-xs items-center rounded-[24px] py-2xs pr-2xs pl-sm w-fit font-Mono leading-4;
+  @apply text-text-onPrimary dark:text-text-dark-onPrimary;
+  &--blue {
+    @apply bg-primary;
+  }
+  &--gold {
+    @apply bg-zarin-heavy;
+  }
+  &--silver {
+    @apply bg-silver;
+  }
+  &--new {
+    @apply bg-indigo-500;
+  }
+  &--basic {
+    @apply bg-primary;
+  }
+}

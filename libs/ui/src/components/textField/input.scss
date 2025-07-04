@@ -1,0 +1,112 @@
+.input {
+  @apply relative;
+
+  &__inner {
+    @apply focus-within:border-interactive-focus border focus-within:shadow-border-focus-soft;
+
+    input {
+      @apply w-full bg-transparent p-sm font-normal text-body-400-b2 text-text relative disabled:text-text-disabled;
+    }
+
+    &__input-section {
+      @apply flex;
+    }
+
+    &--error {
+      @apply border-border-danger rounded-sm border;
+    }
+
+    &--disabled {
+      @apply border-border-disabled bg-surface-disabled rounded-sm;
+    }
+
+    &--default {
+      @apply bg-surface border border-border rounded-sm focus:border focus:border-interactive-focus;
+      @apply hover:shadow-border-hover;
+    }
+
+    &--loading {
+      @apply absolute top-md right-2xl w-[5.5rem] px-2xs py-2xs;
+    }
+
+    &__label {
+      @apply absolute -top-[12px] right-xs transition-all;
+
+      &__container {
+        @apply relative bg-surface px-2xs text-caption-400-c1 text-text-soft z-10;
+      }
+    }
+
+    &__icon {
+      @apply text-icon;
+
+      &--before {
+        @apply my-sm mr-xs flex;
+      }
+
+      &--after {
+        @apply my-2xs mt-[5px] flex p-[7px];
+      }
+    }
+
+    &__unit {
+      @apply bg-surface-soft rounded-sm p-xs my-auto mx-2xs text-text text-body-400-b2;
+    }
+
+    &__button {
+      @apply rounded-sm my-auto mx-2xs text-text text-body-400-b2;
+    }
+
+    &__stepper {
+      @apply mx-2xs text-text text-body-400-b2 flex flex-col gap-[2px] my-[2px];
+
+      button {
+        @apply px-sm py-[6px];
+      }
+    }
+  }
+
+  &__description {
+    @apply flex justify-between flex-row-reverse;
+
+    i {
+      @apply align-middle;
+    }
+
+    &__helper {
+      @apply my-2xs pr-xs font-normal text-body-400-b3 font-yekanFa;
+
+      &--error {
+        @apply text-text-danger;
+      }
+
+      &--success {
+        @apply text-text-success;
+      }
+
+      &--info {
+        @apply text-text-soft;
+      }
+    }
+
+    &__limit {
+      @apply font-yekanFa text-text-soft text-body-400-b3 my-2xs ml-xs;
+    }
+  }
+
+  input {
+    &::placeholder {
+      @apply font-yekanFa;
+    }
+  }
+}
+
+.label-enter-active,
+.label-leave-active {
+  @apply transition-all ease-in-out duration-75;
+}
+
+.label-enter-from,
+.label-leave-to {
+  @apply translate-y-2xl opacity-0;
+}

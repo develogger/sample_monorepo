@@ -1,0 +1,17 @@
+.radio-card {
+  @apply w-full py-sm px-sm flex;
+  @apply justify-start flex-col flex-wrap items-end rounded-sm;
+  @apply focus-visible:outline focus-visible:outline-interactive-focus focus-visible:outline-2;
+
+  &__description {
+    @apply flex justify-center mr-2xl text-text-soft text-body-400-b3 items-end;
+  }
+
+  &__section {
+    @apply flex flex-col items-center w-full my-md;
+  }
+
+  &__bottom {
+    @apply w-full mt-md;
+  }
+}

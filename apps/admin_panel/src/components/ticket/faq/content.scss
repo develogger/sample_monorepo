@@ -1,0 +1,18 @@
+.root {
+  @apply w-full;
+  &__title {
+    @apply text-heading-600-h2 text-text flex justify-end mb-xl;
+  }
+  &__divider {
+    @apply w-full my-xl;
+  }
+  &__notice {
+    @apply flex gap-xs;
+    &__paragraph {
+      @apply text-body-400-b2;
+    }
+    &__icon {
+      @apply text-primary;
+    }
+  }
+}

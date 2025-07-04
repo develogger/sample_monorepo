@@ -1,0 +1,15 @@
+.root {
+  @apply w-full flex flex-col justify-center;
+  &__text {
+    @apply text-body-400-b3 font-medium text-text-soft text-right mb-xl;
+  }
+  &__button {
+    @apply flex w-full border-r-0;
+    &--first {
+      @apply rounded-r-sm border-r;
+    }
+    &--last {
+      @apply rounded-l-sm border-r;
+    }
+  }
+}

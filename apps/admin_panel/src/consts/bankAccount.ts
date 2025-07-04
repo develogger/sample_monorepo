@@ -1,0 +1,1 @@
+export const BANK_ACCOUNTS_PAGE_SIZE = 25;

@@ -1,0 +1,26 @@
+export const names = [
+  'ProductPaymentLink',
+  'ProductPaymentLinkDark',
+  'EmailDownload',
+  'NoResult',
+  'Otp',
+  'NoResultDark',
+  'EmptyPaper',
+  'EmptyPaperDark',
+  'SupportAvatars',
+  'SupportAvatarsDark',
+  'InstantPayout',
+  'InstantPayoutDark',
+  'TimeRange',
+  'WalletBankCards',
+  'TimeRangeDark',
+  'Coupon',
+  'CouponDark',
+  'Bill',
+  'BillDark',
+  'EmptyBank',
+  'Announcement',
+  'EmptyNotification',
+];
+
+export type IllustrationNamesType = keyof typeof names;

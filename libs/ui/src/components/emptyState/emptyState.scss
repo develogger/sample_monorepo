@@ -1,0 +1,19 @@
+.root {
+  @apply bg-surface px-md pt-lg m-auto max-w-[340px];
+
+  &__vector {
+    @apply flex justify-center items-center h-[128px];
+  }
+
+  &__title {
+    @apply text-body-500-b1 text-text flex justify-center mt-2xl;
+  }
+
+  &__description {
+    @apply text-body-400-b2 text-text-soft flex justify-center mt-sm text-center;
+  }
+
+  &__action {
+    @apply mt-2xl;
+  }
+}

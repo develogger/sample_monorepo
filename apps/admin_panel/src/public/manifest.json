@@ -1,0 +1,99 @@
+{
+  "name": "My Zarinpal",
+  "short_name": "Zarinpal",
+  "description": "My Zarinpal PWA Application",
+  "lang": "fa-IR",
+  "dir": "rtl",
+  "id": "/source=pwa",
+  "start_url": "/source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#0a33ff",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "screenshots": [
+    {
+      "src": "/img/pwa-icons/1280x720.png",
+      "type": "image/png",
+      "sizes": "1280x720",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/img/pwa-icons/720x1280-1.png",
+      "type": "image/png",
+      "sizes": "720x1280"
+    },
+    {
+      "src": "/img/pwa-icons/720x1280-2.png",
+      "type": "image/png",
+      "sizes": "720x1280"
+    },
+    {
+      "src": "/img/pwa-icons/720x1280-3.png",
+      "type": "image/png",
+      "sizes": "720x1280"
+    },
+    {
+      "src": "/img/pwa-icons/720x1280-4.png",
+      "type": "image/png",
+      "sizes": "720x1280"
+    },
+    {
+      "src": "/img/pwa-icons/720x1280-5.png",
+      "type": "image/png",
+      "sizes": "720x1280"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/img/pwa-icons/72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/img/pwa-icons/100.png",
+      "type": "image/png",
+      "sizes": "100x100"
+    },
+    {
+      "src": "/img/pwa-icons/128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/img/pwa-icons/144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "/img/pwa-icons/152.png",
+      "type": "image/png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "/img/pwa-icons/192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/pwa-icons/256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/img/pwa-icons/512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "cafebazaar",
+      "url": "https://cafebazaar.ir/app/com.zarinpal.ewallets",
+      "id": "com.zarinpal.ewallets"
+    }
+  ]
+}
